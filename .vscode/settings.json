@@ -7,6 +7,7 @@
         "Setadminrole",
         "Setautorole",
         "Setmodlog",
-        "Setmodrole"
+        "Setmodrole",
+        "unmuted"
     ]
 }
