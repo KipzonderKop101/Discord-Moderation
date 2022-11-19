@@ -20,7 +20,7 @@ Discord-Moderation is equipped with a variety of features needed for a modern Di
 - Mute and unmute
 - Warn and clear warnings
 - Clear messages
-- And more! A more detailed list [here](commands)
+- And more! A more detailed list [here](https://github.com/KipzonderKop101/Discord-Moderation#commands)
 
 ## Installation
 
