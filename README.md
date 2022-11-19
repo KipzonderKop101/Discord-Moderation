@@ -38,11 +38,11 @@ Implemented commands:
 
 - `/ban <user> [reason]` - Bans a user from the server
 - `/kick <user> [reason]` - Kicks a user from the server
+- `/mute <user> [reason]` - Mutes a user from the server
+- `/unmute <user> [reason]` - Unmutes a user from the server
 
 Planned commands:
 
-- `/mute <user> [reason]` - Mutes a user from the server
-- `/unmute <user> [reason]` - Unmutes a user from the server
 - `/warn <user> [reason]` - Warns a user from the server
 - `/warn <user>  [reason]` - Clears a user's warnings from the server
 - `/warns <user>` - Shows a user's warnings from the server
