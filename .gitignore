@@ -131,3 +131,4 @@ dmypy.json
 # json 
 *.json
 src/database/warnings.json
+/src/database/warnings.json
