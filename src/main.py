@@ -20,6 +20,7 @@ directories = ['General', 'Moderation']
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
+# Reload files so that changes are applied
 @client.command()
 @commands.is_owner()
 async def reload(ctx):
