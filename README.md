@@ -20,11 +20,11 @@ Discord-Moderation is equipped with a variety of features needed for a modern Di
 - Mute and unmute
 - Warn and clear warnings
 - Clear messages
-- And more! A more detailed list [commands](here)
+- And more! A more detailed list [here](commands)
 
 ## Installation
 
-To keep things clear, this page does not hold a detailed guide of how to install and set-up the bot, however, you can find a detailed guide [here](), which will walk you through the entire process.
+To keep things clear, this page does not hold a detailed guide of how to install and set-up the bot, however, you can find a detailed guide [here](https://github.com/KipzonderKop101/Discord-Moderation/blob/main/docs/GUIDE.md), which will walk you through the entire process.
 
 ## Support
 
