@@ -8,6 +8,7 @@
         "Setautorole",
         "Setmodlog",
         "Setmodrole",
-        "unmuted"
+        "unmuted",
+        "warningstore"
     ]
 }
