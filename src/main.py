@@ -19,6 +19,7 @@ directories = ['General', 'Moderation']
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='over the server'))
 
 # Reload files so that changes are applied
 @client.command()
