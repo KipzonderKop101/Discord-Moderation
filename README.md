@@ -4,6 +4,8 @@
 
 Current status: **supported**
 
+****Warning! Even though, in the current stage of development, a lot of the commands are 'implemented', I do not recommend using this bot in your server yet duo to a lot of the commands not being finished, or needing big updates****
+
 ## Introduction
 
 👋, welcome to the this Discord-Moderation bot! This is a fully open-source code project for you to download or clone and use for your own Discord server. This bot is designed to be easy to use and customize, and is a great way to get started with Discord bots. 
