@@ -52,7 +52,7 @@ Replace `1234567890` with the ID of your server. This will enable debug mode for
 
 In this part of the guide you'll find a definitive guide on how to customize this bot to your liking.
 
-This bot has many parts you can go and customize, for example, every command has embeds or messages you can customize, and you can also customize the bot's status. 
+This bot has many parts you can go and customize, for example, every command has embeds or messages you can customize, and you can also customize the bot's status.
 
 For example, to customize a text. In the `src/cogs/General/help.py` file you can find this piece of code:
 
@@ -68,7 +68,7 @@ Another example are embeds. In the `src/cogs/General/help.py` file you can find 
 embed = discord.Embed(title='Help', description='Select a category to get help on a command', color=discord.Color.blurple())
 ```
 
-This is the help command's embed. You can change the title, description, and color to whatever you want. 
+This is the help command's embed. You can change the title, description, and color to whatever you want.
 
 Furthermore, you can also change the bot's status. In the `main.py` file you can find this piece of code:
 
@@ -77,4 +77,3 @@ await client.change_presence(activity=discord.Activity(type=discord.ActivityType
 ```
 
 You can also go and change the type, and name to whatever you want. You can find more info on the types [here](https://discordpy.readthedocs.io/en/latest/api.html#discord.ActivityType).
-
