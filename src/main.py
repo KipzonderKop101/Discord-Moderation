@@ -13,7 +13,7 @@ intents.message_content = True
 TOKEN = os.getenv('TOKEN')
 
 client = discord.Bot(intents=intents, debug_guilds=[850778582515056710])
-directories = ['General', 'Moderation']
+directories = ['Config', 'General', 'Moderation']
 
 # On ready event
 @client.event
