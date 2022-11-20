@@ -43,10 +43,10 @@ Implemented commands:
 - `/warn <user> [reason]` - Warns a user from the server
 - `/removewarning <user> [warning] [index]` - Clears a user's warnings from the server
 - `/warnings <user>` - Shows a user's warnings from the server
+- `/purge [channel] [amount]` - Clears a certain amount of messages from the channel, default is 10
 
 Planned commands:
 
-- `/clear [amount]` - Clears a certain amount of messages from the channel, default is 10
 - `/lock [channel] [reason]` - Locks a channel, default is the context channel
 - `/unlock [channel] [reason]` - Unlocks a channel, default is the context channel
 - `/slowmode [channel] [time]` - Sets the slowmode of a channel, default is the current channel, default time is 10 seconds
