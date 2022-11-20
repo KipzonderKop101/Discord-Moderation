@@ -47,11 +47,11 @@ Implemented commands:
 - `/lock [channel] [reason]` - Locks a channel, default is the context channel
 - `/unlock [channel] [reason]` - Unlocks a channel, default is the context channel
 - `/slowmode [channel] [time]` - Sets the slowmode of a channel, default is the current channel, default time is 10 seconds
+- `/setmodlog [channel]` - Set a mod log channel, default is the context channel, can only be one
 
 Planned commands:
 
-- `/Setmodlog [channel]` - Set a mod log channel, default is the context channel, can only be one
-- `/Setmuterole <role>` - Set a mute role, can only be one
-- `/Setmodrole <role>` - Set a mod role, can be multiple
-- `/Setadminrole <role>` - Set an admin role, can be multiple
-- `/Addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
+- `/setmuterole <role>` - Set a mute role, can only be one
+- `/setmodrole <role>` - Set a mod role, can be multiple
+- `/setadminrole <role>` - Set an admin role, can be multiple
+- `/addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
