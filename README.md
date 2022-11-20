@@ -48,10 +48,13 @@ Implemented commands:
 - `/unlock [channel] [reason]` - Unlocks a channel, default is the context channel
 - `/slowmode [channel] [time]` - Sets the slowmode of a channel, default is the current channel, default time is 10 seconds
 - `/setmodlog [channel]` - Set a mod log channel, default is the context channel, can only be one
-
-Planned commands:
-
 - `/setmuterole <role>` - Set a mute role, can only be one
 - `/setmodrole <role>` - Set a mod role, can be multiple
 - `/setadminrole <role>` - Set an admin role, can be multiple
+
+Planned commands:
+
+
 - `/addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
+- `/help [category] [command]` - Shows a list of commands or information about a command
+- `/ping` - Shows the bot's latency
