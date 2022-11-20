@@ -40,12 +40,12 @@ Implemented commands:
 - `/kick <user> [reason]` - Kicks a user from the server
 - `/mute <user> [reason]` - Mutes a user from the server
 - `/unmute <user> [reason]` - Unmutes a user from the server
+- `/warn <user> [reason]` - Warns a user from the server
+- `/removewarning <user> [warning] [index]` - Clears a user's warnings from the server
+- `/warnings <user>` - Shows a user's warnings from the server
 
 Planned commands:
 
-- `/warn <user> [reason]` - Warns a user from the server
-- `/warn <user>  [reason]` - Clears a user's warnings from the server
-- `/warns <user>` - Shows a user's warnings from the server
 - `/clear [amount]` - Clears a certain amount of messages from the channel, default is 10
 - `/lock [channel] [reason]` - Locks a channel, default is the context channel
 - `/unlock [channel] [reason]` - Unlocks a channel, default is the context channel
