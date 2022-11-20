@@ -4,6 +4,7 @@
         "Automoderation",
         "autorole",
         "modlog",
+        "removewarning",
         "Setadminrole",
         "Setautorole",
         "Setmodlog",
