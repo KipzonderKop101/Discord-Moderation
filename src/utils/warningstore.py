@@ -1,6 +1,9 @@
 import json
 
 class WarningStore:
+    # Path to the warning file
+    warning_path = "database/warnings.json"
+
     def __init__(self):
         # Load the warnings from the file
         self.load_warnings()
@@ -21,12 +24,12 @@ class WarningStore:
     
     # Function to save the warnings to the file
     def save_warnings(self):
-        with open('database/warnings.json', 'w') as f:
+        with open(self.warning_path, 'w') as f:
             json.dump(self.warnings, f, indent=4)
 
     # Function to load the warnings from the file
     def load_warnings(self):
-        with open('database/warnings.json', 'r') as f:
+        with open(self.warning_path, 'r') as f:
             self.warnings = json.load(f)
     
     # Function to get the warnings for a member
