@@ -8,7 +8,7 @@ class SetModRole(commands.Cog):
         self.client = client
     
     @discord.slash_command(description='Set the mod role for the server')
-    async def setmodrole(self, ctx, role: Option(discord.Role, description='The role to set as the mod role', required=True)):
+    async def setmodrole(self, ctx, role: Option(discord.Role, description='The role to set as the mod role', required=False)):
         config = ConfigHelper()
         config.create_mod_role_entry()
         config.set_mod_role_id(role.id)

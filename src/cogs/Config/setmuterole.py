@@ -8,7 +8,7 @@ class SetMuteRole(commands.Cog):
         self.client = client
     
     @discord.slash_command(description='Set the mute role for the server')
-    async def setmuterole(self, ctx, role: Option(discord.Role, description='The role to set as the mute role', required=True)):
+    async def setmuterole(self, ctx, role: Option(discord.Role, description='The role to set as the mute role', required=False)):
         config = ConfigHelper()
         config.create_mute_role_entry()
         config.set_mute_role_id(role.id)
