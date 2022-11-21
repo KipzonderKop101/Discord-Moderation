@@ -49,6 +49,8 @@ class ConfigHelper:
         with open(self.config_path, 'w') as f:
             json.dump(config, f, indent=4)
     
+    ############################
+    
     def create_mute_role_entry(self):
         # Open the config file
         with open(self.config_path, 'r') as f:
@@ -93,6 +95,8 @@ class ConfigHelper:
         # Save the config file
         with open(self.config_path, 'w') as f:
             json.dump(config, f, indent=4)
+    
+    ############################
     
     def create_mod_role_entry(self):
         # Open the config file
@@ -139,6 +143,8 @@ class ConfigHelper:
         with open(self.config_path, 'w') as f:
             json.dump(config, f, indent=4)
     
+    ############################
+    
     def create_admin_role_entry(self):
         # Open the config file
         with open(self.config_path, 'r') as f:
@@ -179,6 +185,42 @@ class ConfigHelper:
         
         # Clear the admin role id
         config['admin_role_id'] = None
+
+        # Save the config file
+        with open(self.config_path, 'w') as f:
+            json.dump(config, f, indent=4)
+
+    ############################
+
+    # Check if there's an whitelisted role array in config.json, and if not, create one
+    def create_whitelisted_roles_entry(self):
+        # Open the config file
+        with open(self.config_path, 'r') as f:
+            config = json.load(f)
+
+        # Check if there's an entry for the whitelisted roles array in config.json, and if not, create one
+        if 'whitelisted_roles' not in config:
+            config['whitelisted_roles'] = []
+
+        # Save the config file
+        with open(self.config_path, 'w') as f:
+            json.dump(config, f, indent=4)
+        
+    def get_whitelisted_roles(self):
+        # Open the config file
+        with open(self.config_path, 'r') as f:
+            config = json.load(f)
+        
+        # Return the whitelisted roles array
+        return config['whitelisted_roles']
+    
+    def set_whitelisted_roles(self, roles):
+        # Open the config file
+        with open(self.config_path, 'r') as f:
+            config = json.load(f)
+        
+        # Set the whitelisted roles array
+        config['whitelisted_roles'] = roles
 
         # Save the config file
         with open(self.config_path, 'w') as f:
