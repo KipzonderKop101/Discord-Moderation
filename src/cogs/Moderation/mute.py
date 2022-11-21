@@ -46,12 +46,9 @@ class Mute(commands.Cog):
         if mutedRole in member.roles:
             await ctx.respond(f"{member.mention} is already muted!")
         else:
-            if reason:
-                await member.add_roles(mutedRole, reason=reason)
-                await ctx.respond(f"{member.mention} has been muted for {reason}!", ephemeral=True)
-            else:
-                await member.add_roles(mutedRole, reason="No reason provided")
-                await ctx.respond(f"{member.mention} has been muted!", ephemeral=True)
+            if reason == None: reason = 'No reason provided'
+            await member.add_roles(mutedRole, reason=reason)
+            await ctx.respond(f"{member.mention} has been muted for {reason}!", ephemeral=True)
 
 def setup(client):
     client.add_cog(Mute(client))
