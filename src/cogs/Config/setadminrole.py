@@ -11,8 +11,12 @@ class SetAdminRole(commands.Cog):
     async def setadminrole(self, ctx, role: Option(discord.Role, description='The role to set as the admin role', required=False)):
         config = ConfigHelper()
         config.create_admin_role_entry()
-        config.set_admin_role_id(role.id)
-        await ctx.respond(f'Set the admin role to {role.mention}')
+        if role is None:
+            config.clear_admin_role_id()
+            await ctx.respond("Cleared the admin role")
+        else:
+            config.set_admin_role_id(role.id)
+            await ctx.respond(f"Set the admin role to {role.mention}")
 
 def setup(client):
     client.add_cog(SetAdminRole(client))
