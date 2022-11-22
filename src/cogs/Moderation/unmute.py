@@ -2,6 +2,7 @@ import discord
 from discord import Option
 from discord.ext import commands
 from utils.confighelper import ConfigHelper
+from utils.modlog import ModLog
 
 class Unmute(commands.Cog):
     def __init__(self, client):
@@ -11,6 +12,8 @@ class Unmute(commands.Cog):
     async def unmute(self, ctx, member: Option(discord.Member, 'The member to unmute', required=True), reason: Option(str, 'The reason for the unmute', required=False)):
         # Check if member has a muted role
         config = ConfigHelper()
+        log = ModLog()
+
         if reason == None: reason = 'No reason provided'
 
         if not config.get_mute_role_id():
@@ -20,6 +23,7 @@ class Unmute(commands.Cog):
             if muted_role in member.roles:
                 await member.remove_roles(muted_role, reason=reason)
                 await ctx.respond(f"{member.mention} has been unmuted for {reason}!", ephemeral=True)
+                await log.log(ctx, 'Unmute', reason)
             else:
                 await ctx.respond(f"{member.mention} is not muted!")
 
