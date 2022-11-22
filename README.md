@@ -60,4 +60,9 @@ Implemented commands:
 Planned commands:
 
 - `/help [category] [command]` - Shows a list of commands or information about a command
+- `/clearmuterole` - Clears the mute role
+- `/clearmodrole` - Clears the mod role
+- `/clearadminrole` - Clears the admin role
+- `/clearwhitelistedrole` - Clears the whitelisted role
+- `/clearmodrole` - Clears the mod log channel
 
