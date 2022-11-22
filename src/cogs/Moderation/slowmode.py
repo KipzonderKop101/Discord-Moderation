@@ -8,7 +8,7 @@ class Slowmode(commands.Cog):
         self.client = client
     
     @discord.slash_command(description="Set slowmode in a channel")
-    async def slowmode(self, ctx, channel: Option(discord.abc.GuildChannel, 'Channel to set slowmode, default is current', required=False),  amount: Option(int, "Amount of seconds to set slowmode to, default is 10", required=False), reason: Option(str, 'Reason to set slowmode',  reason=False)):
+    async def slowmode(self, ctx, channel: Option(discord.abc.GuildChannel, 'Channel to set slowmode, default is current', required=False),  amount: Option(int, "Amount of seconds to set slowmode to, default is 10", required=False), reason: Option(str, 'Reason to set slowmode', required=False)):
         if amount is None: amount = 10
         if channel is None: channel = ctx.channel
         if reason is None: reason = "No reason provided"
