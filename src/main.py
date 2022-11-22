@@ -2,10 +2,13 @@ import os
 import os.path
 
 import discord
+
 from dotenv import load_dotenv
 from discord.ext import commands
+from utils.modlog import ModLog
 
 load_dotenv()
+log = ModLog()
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -20,6 +23,14 @@ directories = ['Config', 'General', 'Moderation']
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='over the server'))
+
+@client.event
+async def on_join(member):
+    await log.log(member, 'Join', 'None')
+
+@client.event
+async def on_leave(member):
+    await log.log(member, 'Leave', 'None')
 
 # Reload files so that changes are applied
 @client.command()
