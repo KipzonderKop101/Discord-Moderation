@@ -53,10 +53,11 @@ Implemented commands:
 - `/setmuterole <role>` - Set a mute role, can only be one
 - `/setmodrole <role>` - Set a mod role, can be multiple
 - `/setadminrole <role>` - Set an admin role, can be multiple
+- `/addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
+- `/removewhitelistedrole <role>` - Remove a whitelisted role, can be multiple
+- `/ping` - Shows the bot's latency
 
 Planned commands:
 
-
-- `/addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
 - `/help [category] [command]` - Shows a list of commands or information about a command
-- `/ping` - Shows the bot's latency
+
