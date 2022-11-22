@@ -8,7 +8,7 @@ class SetAdminRole(commands.Cog):
         self.client = client
     
     @discord.slash_command(description='Set the admin role for the server')
-    async def setadminrole(self, ctx, role: Option(discord.Role, description='The role to set as the admin role', required=False)):
+    async def setadminrole(self, ctx, role: Option(discord.Role, description='The role to set as the admin role', required=True)):
         config = ConfigHelper()
         config.create_admin_role_entry()
         if role is None:

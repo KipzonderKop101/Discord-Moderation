@@ -9,7 +9,7 @@ class Setmodlog(commands.Cog):
         self.client = client
     
     @discord.slash_command(description="Set the modlog channel")
-    async def setmodlog(self, ctx, channel: Option(discord.abc.GuildChannel, description="The channel to set as the modlog channel", required=False)):
+    async def setmodlog(self, ctx, channel: Option(discord.abc.GuildChannel, description="The channel to set as the modlog channel", required=True)):
         config = ConfigHelper()
         config.create_modlog_entry()
         if channel is None:
