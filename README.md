@@ -4,7 +4,9 @@
 
 Current status: **supported**
 
-****Warning! Even though, in the current stage of development, a lot of the commands are 'implemented', I do not recommend using this bot in your server yet duo to a lot of the commands not being finished, or needing big updates****
+****Warning! Even though, in the current stage of development, a lot of the commands are 'implemented', I do not recommend using this bot in your server yet duo to a lot of the commands not being finished, or needing big updates**
+
+NOTE: THIS BOT IS CREATED TO BE USED IN ONE SERVER! IF YOU ARE GOING TO BE USING IT IT MORE THAN ONE SERVER, YOU WILL NEED TO MAKE A SEPARATE BOT FOR EACH SERVER, OR YOU WILL HAVE TO MAKE A LOT OF CHANGES TO THE CODE!
 
 ## Introduction
 
@@ -56,13 +58,16 @@ Implemented commands:
 - `/addwhitelistedrole <role>` - Add a whitelisted role, can be multiple
 - `/removewhitelistedrole <role>` - Remove a whitelisted role, can be multiple
 - `/ping` - Shows the bot's latency
-
-Planned commands:
-
-- `/help [category] [command]` - Shows a list of commands or information about a command
 - `/clearmuterole` - Clears the mute role
 - `/clearmodrole` - Clears the mod role
 - `/clearadminrole` - Clears the admin role
 - `/clearwhitelistedrole` - Clears the whitelisted role
 - `/clearmodrole` - Clears the mod log channel
+
+Planned commands:
+
+- `/help [category] [command]` - Shows a list of commands or information about a command
+- `config` - View the bot's configuration
+- `setconfig` - Interactive configuration setup
+
 
