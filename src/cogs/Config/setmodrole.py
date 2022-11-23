@@ -11,12 +11,8 @@ class SetModRole(commands.Cog):
     async def setmodrole(self, ctx, role: Option(discord.Role, description='The role to set as the mod role', required=True)):
         config = ConfigHelper()
         config.create_mod_role_entry()
-        if role is None:
-            config.clear_mod_role_id()
-            await ctx.respond("Cleared the mod role")
-        else:
-            config.set_mod_role_id(role.id)
-            await ctx.respond(f"Set the mod role to {role.mention}")
+        config.set_mod_role_id(role.id)
+        await ctx.respond(f'Set the mod role to {role.name}')
 
     
 def setup(client):

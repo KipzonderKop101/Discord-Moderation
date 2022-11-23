@@ -11,12 +11,8 @@ class SetMuteRole(commands.Cog):
     async def setmuterole(self, ctx, role: Option(discord.Role, description='The role to set as the mute role', required=True)):
         config = ConfigHelper()
         config.create_mute_role_entry()
-        if role is None:
-            config.clear_mute_role_id()
-            await ctx.respond("Cleared the mute role")
-        else:
-            config.set_mute_role_id(role.id)
-            await ctx.respond(f"Set the mute role to {role.mention}")
+        config.set_mute_role_id(role.id)
+        await ctx.respond(f'Set the mute role to {role.name}')
             
 
 def setup(client):
