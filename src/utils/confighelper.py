@@ -225,3 +225,18 @@ class ConfigHelper:
         # Save the config file
         with open(self.config_path, 'w') as f:
             json.dump(config, f, indent=4)
+    
+    # Clear all whitelisted roles
+    def clear_whitelisted_roles(self):
+        # Open the config file
+        with open(self.config_path, 'r') as f:
+            config = json.load(f)
+        
+        # Clear the whitelisted roles array
+        config['whitelisted_roles'] = []
+
+        # Save the config file
+        with open(self.config_path, 'w') as f:
+            json.dump(config, f, indent=4)
+    
+    
