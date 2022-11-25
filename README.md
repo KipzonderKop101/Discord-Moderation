@@ -38,6 +38,8 @@ As mentioned previously, you can use this bot without any prior experience with 
 
 `<>` represent required arguments, `[]` represent optional arguments.
 
+NOTE: THESE COMMANDS ARE NOT FINISHED YET, AND ARE NOT GUARANTEED TO WORK! THEY ARE STILL IN DEVELOPMENT! THESE DOCS ARE ALSO NOT 100% ACCURATE! 
+
 Implemented commands:
 
 - `/ban <user> [reason]` - Bans a user from the server
@@ -63,11 +65,11 @@ Implemented commands:
 - `/clearadminrole` - Clears the admin role
 - `/clearwhitelistedrole` - Clears the whitelisted role
 - `/clearmodrole` - Clears the mod log channel
+- `config` - View the bot's configuration
 
 Planned commands:
 
 - `/help [category] [command]` - Shows a list of commands or information about a command
-- `config` - View the bot's configuration
 - `setconfig` - Interactive configuration setup
 
 
